@@ -6,5 +6,6 @@ certoraRun  src/contracts/StakedTokenV2Rev4.sol:StakedTokenV2Rev4 \
             StakedTokenV2Rev4:REWARD_TOKEN=DummyERC20Impl \
     --solc_map StakedTokenV2Rev4=solc7.5,DummyERC20Impl=solc8.0 \
     --optimistic_loop \
+    --send_only \
     --cloud \
     --msg "Rescue staked aave"
