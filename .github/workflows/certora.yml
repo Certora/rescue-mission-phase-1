@@ -39,7 +39,15 @@ jobs:
           wget https://github.com/ethereum/solidity/releases/download/v0.8.10/solc-static-linux
           chmod +x solc-static-linux
           sudo mv solc-static-linux /usr/local/bin/solc8.10
-      
+
+          wget https://github.com/ethereum/solidity/releases/download/v0.7.5/solc-static-linux
+          chmod +x solc-static-linux
+          sudo mv solc-static-linux /usr/local/bin/solc7.5
+
+          wget https://github.com/ethereum/solidity/releases/download/v0.8.0/solc-static-linux
+          chmod +x solc-static-linux
+          sudo mv solc-static-linux /usr/local/bin/solc8.0
+          
       - name: Verify rule ${{ matrix.rule }}
         run: |
           echo "key length" ${#CERTORAKEY}
